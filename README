@@ -12,9 +12,14 @@ Installation
 
 Source
 ------
-  test/spec/rails uses Git for source control. The clone URL is:
-  
-    git://github.com/pelargir/test_spec_on_rails.git
+  test/spec/rails uses Git for source control. If you're running edge Rails, you can install with:
+
+    script/plugin install git://github.com/pelargir/test_spec_on_rails.git
+
+  Otherwise, I recommend using the git-rails gem:
+
+    sudo gem install git-rails
+    git-rails install git://github.com/pelargir/test_spec_on_rails.git test_spec_on_rails
 
 
 Model validation
