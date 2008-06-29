@@ -1,3 +1,5 @@
+06/28/08 - Added should.render for testing template rendering [Matthew Bass]
+
 05/15/08 - First pass at overriding generators to produce specs [Matthew Bass]
 
 03/18/08 - it_should_validate_presence_of helper added [Matthew Bass]
