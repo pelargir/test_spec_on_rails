@@ -14,7 +14,7 @@ end
 module Test::Spec::Rails::ShouldNotRender
   # Test that we didn't render
   def redirect(template = '')
-    @object.assert_response :redirect # FIXME
+    @object.assert_response :redirect # TODO: fix me
   end
 end
 
