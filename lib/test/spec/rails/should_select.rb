@@ -8,6 +8,11 @@ module Test::Spec::Rails::ShouldSelect
   #   page.should.select "form#login" do |form|
   #     form.should.select "input[name=user_nick]", :text => @user.nick
   #   end
+  # 
+  #  or you can use contain
+  #   page.should.contain "form#login" do |form|
+  #     form.should.contain "input[name=user_nick]", :text => @user.nick
+  #   end
   #
   # See the Rails API documentation for assert_select for more information
   def select(selector, equality=true, message=nil, &block)
@@ -29,6 +34,9 @@ module Test::Spec::Rails::ShouldSelect
     @@response_stack.last.assert_select(selector, equality, message, &block)
     @@response_stack.pop
   end
+  
+  # because contain sounds better imo
+  alias :contain :select
 end
 
 module Test::Spec::Rails::ShouldNotSelect
