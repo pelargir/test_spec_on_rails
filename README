@@ -111,7 +111,7 @@ Routing from a set of url options to an expected path (i.e., #assert_recognizes)
 Setup controller for testing + example usage
 --------------------------------------------
   context "A guest" do
-    use_controller FooController
+    use_controller FooController # => you can also do use_controller :foo
     
     specify "isn't allowed to foo" do
       post :create, :foo => 'bar'
