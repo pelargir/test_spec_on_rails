@@ -9,7 +9,21 @@ module Test::Spec::Rails::UseController
     #     end
     #     specify "should be able to see his profile" { ... }
     #   end
+    
+    # OR
+    # to save some keystrokes you can use a symbolized version of the controller name
+    # without the 'Controller' suffix
+    # For example:
+    #   context "Tuxie" do
+    #     setup do 
+    #       use_controller :users
+    #       login_as :tuxie
+    #     end
+    #     specify "should be able to see his profile" { ... }
+    #   end
+
     def use_controller(controller)
+      controller = eval("#{controller.to_s.capitalize}Controller") if controller.is_a? Symbol
       controller.class_eval { def rescue_action(e); raise e; end }
       @controller = controller.new
       @request    = ActionController::TestRequest.new
