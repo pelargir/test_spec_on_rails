@@ -1,0 +1,88 @@
+8
+
+dir
+3296
+svn://internal.innerfusion.us/gameday_undies/trunk/gameday_undies/vendor/plugins/test_spec_on_rails
+svn://internal.innerfusion.us
+
+
+
+2008-10-13T23:56:31.931267Z
+3294
+vanne
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d9c37a22-14b1-0441-8096-eb603b6dc06e
+
+test
+dir
+
+.git
+dir
+
+LICENSE
+file
+
+
+
+
+2008-10-14T19:24:33.000000Z
+36dd885c564560aff45fb09103d1f856
+2008-10-13T22:46:52.221139Z
+3293
+vanne
+
+Rakefile
+file
+
+
+
+
+2008-10-14T19:24:33.000000Z
+5f7d10316161d35909e7af5f32917d62
+2008-10-13T22:46:52.221139Z
+3293
+vanne
+
+tasks
+dir
+
+lib
+dir
+
+CHANGELOG
+file
+
+
+
+
+2008-10-14T19:24:33.000000Z
+4e2f8af8cce56bcdf0d159b51fa4a7dd
+2008-10-13T22:46:52.221139Z
+3293
+vanne
+
+README
+file
+
+
+
+
+2008-10-14T19:24:33.000000Z
+5187538b3fccec2ed0e18c2d8bc0d41a
+2008-10-13T22:46:52.221139Z
+3293
+vanne
+
