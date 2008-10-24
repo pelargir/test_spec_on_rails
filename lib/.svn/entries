@@ -1,34 +1,0 @@
-8
-
-dir
-3350
-svn://internal.innerfusion.us/gameday_undies/trunk/gameday_undies/vendor/plugins/test_spec_on_rails/lib
-svn://internal.innerfusion.us
-
-
-
-2008-10-24T17:06:12.795353Z
-3350
-vanne
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-d9c37a22-14b1-0441-8096-eb603b6dc06e
-
-test
-dir
-
-generators
-dir
-
