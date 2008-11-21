@@ -9,7 +9,9 @@ module Test::Spec::Rails::ShouldSelect
   #     form.should.select "input[name=user_nick]", :text => @user.nick
   #   end
   # 
-  #  or you can use contain
+  #  OR you can use contain
+  #   page.should.contain "form#login"
+  # 
   #   page.should.contain "form#login" do |form|
   #     form.should.contain "input[name=user_nick]", :text => @user.nick
   #   end

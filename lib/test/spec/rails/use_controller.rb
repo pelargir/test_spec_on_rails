@@ -23,7 +23,7 @@ module Test::Spec::Rails::UseController
     #   end
 
     def use_controller(controller)
-      controller = eval("#{controller.to_s.capitalize}Controller") if controller.is_a? Symbol
+      controller = eval("#{controller.to_s.camelize}Controller") if controller.is_a? Symbol
       controller.class_eval { def rescue_action(e); raise e; end }
       @controller = controller.new
       @request    = ActionController::TestRequest.new
