@@ -164,6 +164,14 @@ Misc
   foo.should.not.equal and foo.should.not.be look for #should_not_equal
 
 
+Convenience and Shortcut methods
+--------------------------------
+
+  Typing in Object#should.not or Object#should all the type can get overwhelming tiresome, here
+  are some helper methods to be nice to your fingers:
+  
+    has(var) # => shortcut for var#should.not.be.nil
+
 Credit
 ------
 
