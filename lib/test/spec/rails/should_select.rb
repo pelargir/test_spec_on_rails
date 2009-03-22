@@ -20,7 +20,7 @@ module Test::Spec::Rails::ShouldSelect
   def select(selector, equality=true, message=nil, &block)
     @@response_stack ||= []
     
-    if @object.is_a?(Test::Unit::TestCase)
+    if @object.is_a?(Test::Unit::TestCase) || @object.is_a?(ActiveSupport::TestCase)
       @@response_stack.push(Test::Spec::Rails::DummyResponse.new(@object))
       
     elsif @object.is_a?(Array) && @object.first.is_a?(HTML::Tag)

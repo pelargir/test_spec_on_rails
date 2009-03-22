@@ -1,3 +1,5 @@
+# TODO: use ActiveSupport::TestCase here instead, if it's defined
+
 class Test::Unit::TestCase
   def page #:nodoc:
     self
@@ -28,6 +30,5 @@ class Test::Unit::TestCase
   
   def layout
     Test::Spec::Rails::TestLayout.new(self)
-  end
-  
+  end  
 end
