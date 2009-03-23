@@ -24,8 +24,4 @@ module Test::Spec::Rails::ShouldValidatePresenceOf
   end
 end
 
-if defined?(ActiveSupport::TestCase)
-  ActiveSupport::TestCase.send(:extend, Test::Spec::Rails::ShouldValidatePresenceOf)
-else
-  Test::Unit::TestCase.send(:extend, Test::Spec::Rails::ShouldValidatePresenceOf)
-end
+Test::Unit::TestCase.send(:extend, Test::Spec::Rails::ShouldValidatePresenceOf)
