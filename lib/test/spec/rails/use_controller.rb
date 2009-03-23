@@ -34,9 +34,4 @@ end
 
 
 Test::Spec::TestCase::ClassMethods.send(:include, Test::Spec::Rails::UseController::ClassMethod)
-
-if defined?(ActiveSupport::TestCase)
-  ActiveSupport::TestCase.send(:include, Test::Spec::Rails::UseController::InstanceMethod)
-else
-  Test::Unit::TestCase.send(:include, Test::Spec::Rails::UseController::InstanceMethod)
-end
+Test::Unit::TestCase.send(:include, Test::Spec::Rails::UseController::InstanceMethod)
