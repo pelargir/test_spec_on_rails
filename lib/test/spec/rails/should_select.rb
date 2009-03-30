@@ -39,6 +39,7 @@ module Test::Spec::Rails::ShouldSelect
   
   # because contain sounds better imo
   alias :contain :select
+  alias :have :select
 end
 
 module Test::Spec::Rails::ShouldNotSelect
