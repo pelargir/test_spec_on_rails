@@ -167,10 +167,31 @@ Misc
 Convenience and Shortcut methods
 --------------------------------
 
-  Typing in Object#should.not or Object#should all the type can get overwhelming tiresome, here
-  are some helper methods to be nice to your fingers:
+Typing in should.not.be.nil all the time can be tiresome and overwhelming, here are some shortcuts that you can use.
+
+    INSTEAD OF:
+    
+      assigns(:var).should.not.be.nil
+    
+    DO:
   
-    has(var) # => shortcut for var#should.not.be.nil
+      has(:var) # => assigns(:var).should.not.be.nil
+    
+    OR:
+    
+      has :var, :page_title # => assigns(:var).should.not.be.nil
+                            # => assigns(:page_title).should.not.be.nil
+
+Shortcuts for checking on flash values:
+
+    INSTEAD OF:
+    
+      flash[:notice].should.not.be.nil
+      
+    DO: 
+    
+      has_flash :notice
+
 
 Credit
 ------
