@@ -13,8 +13,12 @@ module Convenience
 
   # shortcut for should.be.nil
   # cant_have :page_title => assigns(:page_title).should.be.nil
-  def cant_have(var)
-    assigns(var).should.be.nil
+  # OR you can pass an array of values
+  # cant_have :page_title, :user # => assigns(:page_title).should.be.nil
+                                 # => assigns(:user).should.be.nil
+  def cant_have(*var)
+    return assigns(var).should.be.nil if var.length == 1
+    var.each { |v| assigns(v).should.be.nil }
   end
   
   # shortcut for flash[:type].should.not.be.nil
