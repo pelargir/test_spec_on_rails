@@ -3,8 +3,12 @@ module Convenience
   
   # shortcut for should.not.be.nil
   # has :page_title => assigns(:page_title).should.not.be.nil
-  def has(var)
-    assigns(var).should.not.be.nil
+  # OR you can also pass an array of values 
+  # has :page_title, :user # => assigns(:page_title).should.not.be.nil
+                           # => assigns(:user).should.not.be.nil 
+  def has(*var)
+    return assigns(var).should.not.be.nil if var.length == 1
+    var.each { |v| assigns(v).should.not.be.nil }
   end
 
   # shortcut for should.be.nil
