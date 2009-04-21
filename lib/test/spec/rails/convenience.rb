@@ -6,7 +6,7 @@ module Convenience
   def has(var)
     assigns(var).should.not.be.nil
   end
-  
+
   # shortcut for should.be.nil
   # cant_have :page_title => assigns(:page_title).should.be.nil
   def cant_have(var)
