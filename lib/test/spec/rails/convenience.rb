@@ -27,6 +27,12 @@ module Convenience
     flash[flash_type].should.not.be.nil
   end
   
+  # shortcut for setting the HTTP_REFERER variable
+  # set_redirect_back '/users'
+  def set_redirect_back(path="/back/to/path")
+     @request.env["HTTP_REFERER"] = path
+  end
+  
 end
 
 Test::Unit::TestCase.send(:include, Convenience)
