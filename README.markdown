@@ -208,17 +208,17 @@ Likewise you can test for the non existence of the variable using cant_have :
    
       cant_have :var
       
-  OR pass multiple variables to test:
+   OR pass multiple variables to test:
   
       cant_have :var, :page_title
   
 Shortcuts for checking on flash values:
 
-    INSTEAD OF:
+   INSTEAD OF:
     
       flash[:notice].should.not.be.nil
       
-    DO: 
+   DO: 
     
       has_flash :notice
 
