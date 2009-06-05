@@ -23,6 +23,8 @@ end
   
   use_controller
   
+  convenience
+  
 ).each do |file|
   require "test/spec/rails/#{file}"
 end
