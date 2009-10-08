@@ -11,6 +11,18 @@ Installation
  * require 'test/spec/rails' in your test_helper.rb
 
 
+Dependencies
+------------
+
+If you want to run the plugin's tests, you'll need these gems:
+
+ * multi_rails
+ * mocha
+
+Then run "rake test:multi_rails:all" from the root of the project. The tests will be
+executed against each version of Rails you have installed on your system.
+
+
 Source
 ------
 
