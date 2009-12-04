@@ -1,5 +1,1 @@
-.svn
-<<<<<<< HEAD:.gitignore
-=======
-.svn/*
->>>>>>> b5e4da7269801960e95c60b3aa6e3b95d4f3dd77:.gitignore
+pkg

@@ -1,3 +1,5 @@
+12/03/09 - Is now a gem [Matthew Bass]
+
 07/01/08 - should.render now takes optional response code [Matthew Bass]
 
 06/28/08 - Added should.render for testing template rendering [Matthew Bass]
